@@ -17,7 +17,3 @@ from routes import *
 
 api.add_resource(EventResource, "/events")
 api.add_resource(EventDetailResource, "/events/<int:event_id>")
-
-if __name__ == "__main__":
-    db.create_all()
-    app.run(debug=True)
